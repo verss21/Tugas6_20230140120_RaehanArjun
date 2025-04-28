@@ -1,0 +1,81 @@
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    text-align: center;
+    padding: 30px;
+  }
+  
+  h1 {
+    font-size: 52px;
+    color: #e63946;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    animation: fadeInDown 1s ease-out;
+  }
+  
+  h2 {
+    font-size: 36px;
+    margin-top: 50px;
+    color: #1d3557;
+    transition: color 0.3s;
+  }
+  
+  h2:hover {
+    color: #457b9d;
+  }
+  
+  #video, #audio {
+    margin-top: 25px;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  #video:hover, #audio:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  }
+  
+  #gambar1 {
+    margin-top: 30px;
+    width: 320px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.4s, box-shadow 0.4s;
+  }
+  
+  #gambar1:hover {
+    transform: scale(1.05) rotate(1deg);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+  }
+  
+  #judulVideo, #judulAudio, #judulFoto {
+    margin-top: 30px;
+    font-weight: 700;
+  }
+
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+ 
+  audio {
+    width: 320px;
+  }
+ 
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
